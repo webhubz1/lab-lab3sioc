@@ -1,0 +1,173 @@
+/* Global Black and White Theme */
+body {
+    background-color: #e0e0e0; /* Light background for better contrast */
+    color: #121212; /* Dark text for better readability */
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container Styling */
+.container {
+    background-color: #7d7b7b; /* Dark background for the container */
+    color: #e0e0e0; /* Light text for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Slightly heavier shadow */
+    margin-bottom: 20px; /* Margin below container */
+}
+
+/* Headings */
+h1, h2 {
+    color: #000000; /* White for headings */
+    border-bottom: 2px solid #999999; /* Light gray underline */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f8f9fa; /* Light background for the sidebar */
+    color: #121212; /* Dark text for better contrast */
+    padding: 15px; /* Padding for the sidebar */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 220px; /* Fixed width for sidebar */
+    overflow-y: auto; /* Scroll if necessary */
+    transition: width 0.3s; /* Smooth transition for width change */
+}
+
+.sidebar h4 {
+    color: #121212; /* Dark color for sidebar title */
+    font-weight: bold; /* Bold font */
+}
+
+/* Sidebar Links */
+.sidebar .nav {
+    padding-left: 0; /* Remove padding from list */
+}
+
+.sidebar .nav-link {
+    color: #495057; /* Dark color for nav links */
+    display: flex; /* Use flex for better alignment */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.sidebar .nav-link:hover {
+    background-color: #e0e0e0; /* Lighten on hover */
+    color: #121212; /* Change text color on hover */
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.btn-primary {
+    background-color: #ffffff; /* White for primary buttons */
+    color: #121212; /* Dark text */
+}
+
+.btn-primary:hover {
+    background-color: #cccccc; /* Light gray on hover */
+}
+
+.btn-secondary, .btn-warning, .btn-danger {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    border: 1px solid #ffffff; /* White border */
+}
+
+.btn-secondary:hover, .btn-warning:hover, .btn-danger:hover {
+    background-color: #999999; /* Light gray hover */
+    color: #121212; /* Dark text on hover */
+}
+
+/* Table Styling */
+.table {
+    background-color: #121212; /* Dark table background */
+    color: #e0e0e0; /* Light text */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #495057; /* Dark header */
+    color: #ffffff; /* White text for header */
+}
+
+.table th, .table td {
+    padding: 15px;
+    border: 1px solid #999999; /* Light gray borders */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #e0e0e0; /* Light gray for alternating rows */
+}
+
+/* Success Message Styling */
+.alert-success {
+    background-color: #28a745; /* Green background for alert */
+    color: #ffffff; /* White text */
+    border-left: 5px solid #155724; /* Darker green border for emphasis */
+}
+
+/* Form and Input */
+form {
+    display: inline-block;
+}
+
+form button {
+    background-color: #ffffff; /* White buttons in forms */
+    color: #121212; /* Dark text */
+}
+
+form button:hover {
+    background-color: #cccccc; /* Light gray on hover */
+}
+
+/* Logout Button */
+.logout-button {
+    background-color: #ff4c4c; /* Red for logout */
+    color: #ffffff; /* White text */
+    border: none;
+}
+
+.logout-button:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+/* Card Styles */
+.card {
+    background-color: #121212; /* Dark background for cards */
+    border: none; /* Remove default border */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-bottom: 20px; /* Space between cards */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative; /* Change sidebar position */
+        height: auto; /* Adjust height */
+        width: 100%; /* Full width for sidebar */
+    }
+
+    main {
+        margin-left: 0; /* Remove margin for smaller screens */
+    }
+
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    
+}

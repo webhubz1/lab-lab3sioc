@@ -1,0 +1,231 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Dark gray for better readability */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #ffffff; /* White background for contrast */
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video {
+    position: fixed; /* Keep the video fixed */
+    top: 0; /* Aligns the video to the top */
+    left: 50%; /* Center the video horizontally */
+    width: 100vw; /* Make the video fill the viewport width */
+    height: 100vh; /* Make the video fill the viewport height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: -1; /* Send the video behind other elements */
+}
+
+/* Black background overlay styles */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    z-index: 0; /* Ensure the overlay is behind other content but above the video */
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 20px 50px; /* Padding adjusted for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10; /* Ensure the nav is above the video */
+}
+
+.logo {
+    width: 80px; /* Adjusted size for minimalism */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #ffffff; /* White for better visibility against dark background */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Main content styles */
+.form-container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff; /* Black for headings */
+    font-weight: 600;
+    font-size: 2.5rem; /* Slightly smaller for minimalism */
+}
+
+p {
+    font-size: 1rem; /* Reduced font size for a cleaner look */
+}
+
+/* Centered form styling */
+.wrapper {
+    width: 420px;
+    background: rgba(0, 0, 0, 0.8); /* Black background */
+    border: 2px solid rgba(255, 255, 255, .3); /* Light border */
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin: 80px auto;
+    color: #ffffff; /* White text for better visibility */
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Input box styling */
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Light border */
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff; /* White text */
+    padding: 20px;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter placeholder color */
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+/* Button styles */
+.wrapper button {
+    margin-top: 0%;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: #ffffff; /* Main button color */
+    color: rgb(0, 0, 0); /* Button text color */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.wrapper button:hover {
+    background: #1f1e1e; /* Darker shade on hover */
+}
+
+/* Sign-up link styles */
+.wrapper .sign-up {
+    text-align: center;
+    font-size: 14px;
+}
+
+.sign-up a {
+    color: #ff1744; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.sign-up a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styles for the Remember Me and Forgot Password section */
+.remember-forgot {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center vertically */
+    margin: 20px 0; /* Add some vertical margin */
+}
+
+.remember-forgot label {
+    font-size: 14px; /* Font size for the checkbox label */
+    color: #ffffff; /* White color for readability */
+}
+
+.forgot-password {
+    color: #ff1744; /* Color for the forgot password link */
+    text-decoration: none; /* No underline */
+    font-size: 14px; /* Font size for the link */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.forgot-password:hover {
+    color: #e81a1a; /* Darker shade on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Pop-up content styles (if used) */
+.popup-content {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    color: #333; /* Dark text for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    z-index: 15; /* Ensure pop-up is above everything */
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content button {
+    margin-top: 20px;
+    padding: 10px 15px; /* Adjusted padding for balance */
+    background-color: #f57c00; /* Bright accent color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.popup-content button:hover {
+    background-color: #e64a19; /* Darker orange for hover effect */
+}

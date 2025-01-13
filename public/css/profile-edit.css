@@ -1,0 +1,139 @@
+/* General Styles for User Profile */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the Profile Page */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Section Headers */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form and Input Fields */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #f1c40f;
+    outline: none;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Profile Picture Section */
+.profile-picture {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.profile-picture input[type="file"] {
+    display: none;
+}
+
+.profile-picture label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-picture label:hover {
+    background-color: #e1b80f;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #111;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f1c40f;
+    color: #111;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,272 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+    gap: 40px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #f2f2f2;
+    border-bottom: 2px solid #fff;
+}
+
+/* Content container */
+.content-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Success message */
+.message {
+    background-color: #2ecc71;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Search form */
+.search-form {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-form input[type="text"] {
+    padding: 12px 15px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.search-form button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: white;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #333;
+}
+
+/* Add new product link */
+.add-product-link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-product-link a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.add-product-link a:hover {
+    color: #333;
+}
+
+/* Product list styles */
+.products-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #f4f4f4;
+}
+
+.product-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-item strong {
+    font-size: 22px;
+    color: #000;
+    font-weight: 700;
+}
+
+.product-item .description-button,
+.product-item .edit-button,
+.product-item .delete-button {
+    margin-left: 15px;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.product-item .description-button:hover,
+.product-item .edit-button:hover,
+.product-item .delete-button:hover {
+    color: #000;
+}
+
+/* Modal for product description */
+.popup-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.popup-content h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.popup-content .description-text {
+    color: #ddd;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Buttons: Edit, Delete */
+.delete-button {
+    background-color: transparent;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.delete-button:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.edit-button {
+    background-color: transparent;
+    color: #f39c12;
+    border: 2px solid #f39c12;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.edit-button:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+/* Hover effects for product items */
+.product-item:hover {
+    background-color: #f7f7f7;
+    border-color: #e1e1e1;
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    margin: 0 5px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #f4f4f4;
+}
+
+.pagination a:hover {
+    background-color: #f4f4f4;
+}
+
+.pagination .active {
+    background-color: #000;
+    color: white;
+}

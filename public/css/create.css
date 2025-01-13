@@ -1,0 +1,81 @@
+body {
+    background-color: #f4f4f4; /* Light gray for elegance */
+    font-family: 'Georgia', serif; /* Elegant font */
+    color: #333;
+}
+
+.container {
+    width: 60%; /* More compact width for focus */
+    margin: 40px auto; /* Centering the form with more space */
+    padding: 30px; /* Ample padding */
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 1px solid #e0e0e0; /* Subtle border */
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px; /* Space above the title */
+    font-size: 2.5rem; /* Larger title */
+    font-weight: bold; /* Bold title */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 25px; /* Increased space between fields */
+}
+
+label {
+    margin-bottom: 10px; /* Space below label */
+    font-weight: bold; /* Bold labels for importance */
+    font-size: 1.1rem; /* Slightly larger font size */
+    color: #555; /* Darker gray for a softer look */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* More padding for comfort */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft inner shadow */
+    font-size: 1rem; /* Consistent font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #000; /* Black border on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow on focus */
+}
+
+.btn {
+    padding: 12px 25px; /* Comfortable padding */
+    background-color: #000; /* Black background */
+    color: #0e0d0d; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+    text-align: center;
+    font-size: 1.1rem; /* Larger button text */
+    margin: 0 auto; /* Center the button */
+    display: block; /* Block element for centering */
+}
+
+.btn:hover {
+    background-color: #333; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.btn:active {
+    transform: translateY(1px); /* Slight press effect */
+}

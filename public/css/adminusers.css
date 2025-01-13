@@ -1,0 +1,117 @@
+/* Global Black and White Theme */
+body {
+    background-color: #f4f6f9; /* Light background for better contrast */
+    color: #343a40; /* Dark text for better readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean sans-serif font */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container Styling */
+.container {
+    margin: 20px; /* Margin around the container */
+    background-color: #ffffff; /* White background for the container */
+    color: #343a40; /* Dark text for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+/* Headings */
+h1 {
+    color: #212529; /* Darker text for headings */
+    border-bottom: 2px solid #dee2e6; /* Light gray underline */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table {
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space below table */
+    background-color: #ffffff; /* White table background */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+.table thead {
+    background-color: #343a40; /* Dark header */
+    color: #ffffff; /* White text for header */
+}
+
+.table th, .table td {
+    padding: 15px; /* Cell padding */
+    border: 1px solid #dee2e6; /* Light gray borders */
+}
+
+.table tbody tr {
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Slightly lighter for alternating rows */
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for buttons */
+    text-transform: uppercase; /* Uppercase text */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue for primary buttons */
+    color: #ffffff; /* White text */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-warning, .btn-danger {
+    background-color: #343a40; /* Dark background for warning and danger buttons */
+    color: #ffffff; /* White text */
+}
+
+.btn-warning:hover, .btn-danger:hover {
+    background-color: #212529; /* Darker on hover */
+}
+
+/* Success Message Styling */
+.alert-success {
+    background-color: #28a745; /* Green background for alert */
+    color: #ffffff; /* White text */
+    border-left: 5px solid #155724; /* Darker green border for emphasis */
+}
+
+/* Form and Input */
+form {
+    display: inline-block;
+}
+
+form button {
+    background-color: #ffffff; /* White buttons in forms */
+    color: #343a40; /* Dark text */
+}
+
+form button:hover {
+    background-color: #e9ecef; /* Light gray on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px; /* Less margin on smaller screens */
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    .table th, .table td {
+        padding: 10px; /* Reduce padding for table cells on small screens */
+    }
+}
